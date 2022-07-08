@@ -9,7 +9,7 @@ public class CoinSpawner : MonoBehaviour
 
     private int _coinSpawnPositionIndexOld = -1;
     private GameObject _coin;
-    void Start()
+    private void Start()
     {
         GlobalEventManager.OnCoinTake.AddListener(SpawnCoin);
         SpawnCoin();

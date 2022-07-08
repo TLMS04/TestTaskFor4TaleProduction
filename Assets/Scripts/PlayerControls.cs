@@ -7,14 +7,14 @@ public class PlayerControls : MonoBehaviour
 {
     private Camera _mainCamera;
     private NavMeshAgent _navMeshAgent;
-   
-    void Start()
+
+    private void Start()
     {
         _mainCamera = Camera.main;
         _navMeshAgent = GetComponent<NavMeshAgent>();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {

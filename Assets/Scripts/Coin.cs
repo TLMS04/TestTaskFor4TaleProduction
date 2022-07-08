@@ -10,6 +10,7 @@ public class Coin : MonoBehaviour
         {
             GlobalEventManager.SendCoinTake();
             gameObject.GetComponent<MeshRenderer>().enabled = false;
+            gameObject.GetComponent<SphereCollider>().enabled = false;
             StartCoroutine(DestroyCoin());
         }
     }

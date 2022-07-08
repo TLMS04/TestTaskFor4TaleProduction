@@ -11,6 +11,7 @@ public class CoinSpawner : MonoBehaviour
     private GameObject _coin;
     void Start()
     {
+        GlobalEventManager.OnCoinTake.AddListener(SpawnCoin);
         SpawnCoin();
     }
 

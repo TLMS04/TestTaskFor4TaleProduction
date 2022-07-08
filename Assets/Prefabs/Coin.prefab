@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1093479027241660992}
   - component: {fileID: 6988386703071313158}
   - component: {fileID: 4967054820192365285}
+  - component: {fileID: -6756523744572948245}
+  - component: {fileID: -6476245284924902454}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -90,8 +92,37 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5976035500753031485}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6756523744572948245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976035500753031485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5a031ddb5d3ba54d94103b6ca77490f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _particleSystemDestroy: {fileID: 3199911095723195392, guid: 61a21d6fe7f40eb4c91b9864eaf19925, type: 3}
+--- !u!54 &-6476245284924902454
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5976035500753031485}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
